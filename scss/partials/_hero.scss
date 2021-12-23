@@ -1,0 +1,46 @@
+/*Hero*/
+.hero {
+    margin: 0;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/fondo_hero.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: calc(100vh + 2rem);
+    color: #fff;
+    
+    .hero__title {
+    
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    
+    
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        margin-top: -6rem;
+
+    }
+
+    .hero__title {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+
+    }
+}
+
+/*End Hero*/

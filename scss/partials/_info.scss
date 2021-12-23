@@ -1,0 +1,26 @@
+
+
+/*Boda*/
+
+.boda {
+    margin: 1rem auto;
+    
+    .boda__p {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .boda__gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+}
+
+/*End Boda*/

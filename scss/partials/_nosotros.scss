@@ -1,0 +1,27 @@
+
+/*Nosotros*/
+
+.nosotros__text {
+    margin: auto 0;
+}
+
+.nosotros__img {
+    width: 100%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .nosotros {
+
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+
+        .nosotros__img {
+            height: 100vh;
+    
+        }
+    }
+
+}
+
+/*End Nosotros*/
