@@ -58,8 +58,7 @@ section {
   100% {
     background-position: 0% 50%; } }
 
-.fa-chevron-down,
-.fa-chevron-up {
+.fa-chevron-down, .fa-chevron-up {
   text-align: center;
   font-weight: bold;
   display: block;
@@ -70,7 +69,7 @@ section {
 .fa-chevron-up {
   color: #f1f1f1; }
 
-.fa-chevron-down:hover,
+.fa-chevron-down:hover, .fa-chevron-up:hover,
 .fa-chevron-up:hover {
   color: #a7a85b; }
 
@@ -83,10 +82,8 @@ section {
     transform: scale(0.8); } }
 
 /*End  Animations **/
-/*Header*/
 .header {
   padding: 0.5rem;
-  background-color: #333;
   text-align: center; }
   .header .header__marca {
     display: flex;
@@ -98,11 +95,45 @@ section {
       margin: 0 1rem; }
     .header .header__marca .header__texto {
       color: #a7a85b;
-      font-family: secondary_font_family;
-      font-size: 30px; }
+      font-family: "Great Vibes", cursive;
+      font-size: 2rem; }
+  .header .menuhamb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem; }
+    .header .menuhamb .menuhamb-lineas {
+      width: 1.5rem;
+      height: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer; }
+    .header .menuhamb .menuhamb-linea {
+      height: 0.1rem;
+      background-color: #cfcfcf; }
   .header .header__nav {
     margin-right: 3rem; }
     .header .header__nav .nav__a {
+      display: none; }
+    .header .header__nav :hover {
+      background-size: 75% 0.1rem;
+      color: #ffffff;
+      transition: all 0.5s ease-in-out; }
+    .header .header__nav ::after {
+      background-size: 75%  0.1rem;
+      color: #ffffff;
+      transition: all 0.5s ease-in-out; }
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .menuhamb {
+      display: none !important;
+      /* DUDA porque no funciona sin el !important? */ }
+    .header .nav__a {
       text-decoration: none;
       color: #acacac;
       padding: 1rem;
@@ -110,25 +141,14 @@ section {
       background-position: 50% 80%;
       background-repeat: no-repeat;
       background-size: 0% 2px;
-      transition: background-size .3s; }
-    .header .header__nav :hover {
-      background-size: 75% 2px;
-      color: #ffffff;
-      transition: all 0.5s ease-in-out; }
-
-@media screen and (min-width: 768px) {
-  .header {
-    background-color: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .nav__a {
-    display: inline; } }
+      transition: background-size .3s;
+      display: inline !important;
+      /* DUDA porque no funciona sin el !important? */ } }
 
 /*End Header*/
 /*Hero*/
 .hero {
-  margin: 0;
+  margin-top: -6rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo_hero.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -138,16 +158,15 @@ section {
   height: calc(100vh + 2rem);
   color: #fff; }
   .hero .hero__title {
+    margin-top: 10rem;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.3rem; }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    margin-top: -6rem; }
-  .hero__title {
-    text-align: center;
+  .hero .hero__title {
+    margin-top: 0;
     position: absolute;
     top: 50%;
     left: 50%;

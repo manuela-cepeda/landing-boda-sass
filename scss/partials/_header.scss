@@ -1,11 +1,6 @@
-/*Header*/
-
 .header {
     padding: 0.5rem;
-    background-color: $dark;
     text-align: center;
-
-
 
     .header__marca {
         display: flex;
@@ -14,43 +9,69 @@
         .header__logo {
             height: 3rem;
             width: 3rem;
-           filter: invert(0.6);
+            filter: invert(0.6);
             margin: 0 1rem;
 
         }
 
         .header__texto {
-            color: $gold;
-            font-family: secondary_font_family;
-            font-size: 30px;
+            color: map-get($colors, gold-color );
+            font-family: $secondary_font_family;
+            font-size: 2rem;
         }
 
     }
+    .menuhamb {
+        
+       position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1.5rem;
 
 
-.header__nav {
-    margin-right: 3rem;
+    .menuhamb-lineas {
+        width: 1.5rem;
+        height: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }   
 
-    .nav__a {
-        text-decoration: none;
-        color: #acacac;
-        padding: 1rem;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 50% 80%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
 
+        .menuhamb-linea {
+            height: 0.1rem;
+            background-color: rgb(207, 207, 207);
+
+        }
     }
 
-    & :hover {
-        background-size: 75% 2px;
-        color: #ffffff;
-        transition: all 0.5s ease-in-out;
+    .header__nav {
+        margin-right: 3rem;
 
 
+
+        .nav__a {
+           display: none;
+
+        }
+
+        & :hover {
+            background-size: 75% 0.1rem;
+            color: #ffffff;
+            transition: all 0.5s ease-in-out;
+
+
+        }
+
+        & ::after {
+            background-size: 75%  0.1rem;
+            color: #ffffff;
+            transition: all 0.5s ease-in-out;
+
+
+        }
     }
-}
 
 }
 
@@ -58,18 +79,29 @@
 
 @media screen and (min-width: 768px) {
     .header {
-        background-color: none;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
 
+        .menuhamb {
+            display: none !important;
+            /* DUDA porque no funciona sin el !important? */
+        }
 
-    .nav__a {
-
-        display: inline;
-
+        .nav__a {
+            text-decoration: none;
+            color: #acacac;
+            padding: 1rem;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 50% 80%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            display: inline !important;
+            /* DUDA porque no funciona sin el !important? */
+        }
     }
 }
 

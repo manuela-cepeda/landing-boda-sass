@@ -3,12 +3,12 @@
 
 .footer {
     padding: 1rem;
-    background-color: $dark;
+    background-color: map-get($colors, dark-color );
     color: #fff;
     text-align: center;
 
     .footer__a {
-        color: $gold;
+        color: map-get($colors, gold-color );
     }
 }
 

@@ -44,7 +44,7 @@
 
     .btn {
         width: 50%;
-        background-color: $dark;
+        background-color: map-get($colors, dark-color );
         color: #fff;
     }
 }

@@ -1,4 +1,8 @@
 /*Globals*/
+@mixin mb-1{
+    margin-bottom: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,22 +22,22 @@ a {
 
 h1 {
     font-size: 48px;
-    margin-bottom: 1rem;
+    @include mb-1;
 }
 
 h2 {
     font-size: 32px;
 
-    margin-bottom: 1rem;
+    @include mb-1;
 }
 
 h4 {
     font-size: 22px;
-    margin-bottom: 1rem;
+    @include mb-1;
 }
 
 p {
-    margin-bottom: 1rem;
+    @include mb-1;
 }
 
 i {

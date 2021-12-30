@@ -33,8 +33,7 @@
     }
 }
 
-.fa-chevron-down,
-.fa-chevron-up {
+.fa-chevron-down {
     text-align: center;
     font-weight: bold;
     display: block;
@@ -44,12 +43,13 @@
 }
 
 .fa-chevron-up {
+    @extend.fa-chevron-down;
     color: #f1f1f1;
 }
 
 .fa-chevron-down:hover,
 .fa-chevron-up:hover {
-    color: rgb(167, 168, 91);
+    color: map-get($colors, gold-color );
 }
 
 @keyframes scale {
