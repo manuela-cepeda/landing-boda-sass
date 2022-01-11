@@ -8,10 +8,16 @@
 
         .header__logo {
             height: 3rem;
-            width: 3rem;
-            filter: invert(0.6);
+            width:3rem;
+            opacity: 0.75;
             margin: 0 1rem;
-
+            transition: transform .5s ease-in-out;
+            &:hover {
+                opacity: 1;
+                transform: scale(1.1);
+                
+                
+            }
         }
 
         .header__texto {
@@ -21,30 +27,7 @@
         }
 
     }
-    .menuhamb {
-        
-       position: absolute;
-        top: 0;
-        right: 0;
-        margin: 1.5rem;
-
-
-    .menuhamb-lineas {
-        width: 1.5rem;
-        height: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-    }   
-
-
-        .menuhamb-linea {
-            height: 0.1rem;
-            background-color: rgb(207, 207, 207);
-
-        }
-    }
+   
 
     .header__nav {
         margin-right: 3rem;
@@ -73,6 +56,10 @@
         }
     }
 
+    
+
+
+
 }
 
 
@@ -85,11 +72,11 @@
         align-items: center;
 
 
-        .menuhamb {
-            display: none !important;
-            /* DUDA porque no funciona sin el !important? */
+        .header__menuhamb {
+            display: none ;
+           
         }
-
+        
         .nav__a {
             text-decoration: none;
             color: #acacac;
@@ -97,7 +84,7 @@
             background-image: linear-gradient(currentColor, currentColor);
             background-position: 50% 80%;
             background-repeat: no-repeat;
-            background-size: 0% 2px;
+            background-size: 0% 0.1rem;
             transition: background-size .3s;
             display: inline !important;
             /* DUDA porque no funciona sin el !important? */

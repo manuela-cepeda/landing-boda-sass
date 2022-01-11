@@ -4,20 +4,13 @@
 .background-gradient {
     background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #eeeed1 100%);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
 
 
 
 }
 
-@media screen and (min-width: 768px) {
-    .background-gradient {
 
-        height: 100vh;
-
-
-    }
-}
 
 @keyframes gradient {
     0% {
@@ -34,22 +27,27 @@
 }
 
 .fa-chevron-down {
+    z-index: 4;
     text-align: center;
     font-weight: bold;
-    display: block;
+    
     text-decoration: none;
-    color: #38383880;
-    animation: scale 4s ease-in-out infinite;
+    color: #383838b4;
+    animation: scale 2s ease-in-out infinite;
+    display: block;
 }
 
-.fa-chevron-up {
+.fa-chevron-up, .fa-chevron-down.white {
     @extend.fa-chevron-down;
     color: #f1f1f1;
+    
+    
 }
 
 .fa-chevron-down:hover,
 .fa-chevron-up:hover {
     color: map-get($colors, gold-color );
+    
 }
 
 @keyframes scale {
@@ -64,6 +62,17 @@
     100% {
         transform: scale(0.8);
     }
+
+}
+
+@media screen and (min-width: 768px) {
+    .background-gradient {
+
+        height: 100vh;
+
+
+    }
+
 
 }
 

@@ -1,26 +1,77 @@
-
-
 /*Boda*/
+.boda{
+    position: relative;
 
-.boda {
-    margin: 1rem auto;
+    .fa-chevron-down{
+        @include position-i;
+        
+    }
     
+
+
+.boda__info {
+
     .boda__p {
         text-align: center;
     }
+
+}
+.boda__mapa {
+    position: relative;
+background-color: map-get($colors, dark-color);
+height: 15rem;
+margin-top: 4rem;
+/* padding-bottom: 1rem; */
+iframe{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    left: 0;
+   margin: auto;
+    width: 90%;
+    height: 15rem;
+  
+    -webkit-box-shadow: 4px 4px 0px 2px map-get($colors, gold-color);
+        box-shadow: 4px 4px 0px 2px map-get($colors, gold-color);
 }
 
 
+}
+
+}
+
 
 @media screen and (min-width: 768px) {
-
+    
     .boda__gridcontainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
     }
 
-
 }
+
+@media screen and (min-width: 992px) {
+
+    .boda{
+    .boda__info {
+        height: 55vh;
+    } 
+
+    .boda__mapa {
+       
+        height: 45vh;
+        margin-top: 0;
+        iframe {
+            bottom:  3rem;
+            width: 70%;
+            height:14rem; 
+           
+            
+        }
+    }  
+}
+}
+    
 
 /*End Boda*/

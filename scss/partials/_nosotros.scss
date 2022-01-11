@@ -1,25 +1,62 @@
-
 /*Nosotros*/
+.nosotros{
+position: relative;
 
 .nosotros__text {
-    margin: auto 0;
+    margin-bottom: 3rem;
+    
 }
 
-.nosotros__img {
+.fa-chevron-down{
+    @include position-i;
+    
+}
+
+
+.nosotros__acordion {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
+    overflow: hidden;
+    list-style: none;
+
+
+    .accordion {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        height: 100vh;
+        flex: auto;
+        width: 20%;
+        transition: all 0.5s ease-in-out 0s;
+
+
+        &:hover {
+
+            width: 100%;
+
+
+        }
+
+      
+    }
+
 
 }
-
+}
 @media screen and (min-width: 768px) {
     .nosotros {
 
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns:repeat(2, 1fr);
 
-        .nosotros__img {
-            height: 100vh;
-    
+        .nosotros__text {
+            margin: auto 0;
+            
         }
+
+
     }
 
 }

@@ -1,0 +1,28 @@
+
+#lugar{
+    position: relative;
+
+    .fa-chevron-down{
+        @include position-i;
+        
+    }
+ img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(99, 99, 99, 0.308) 0px 2px 8px 0px;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+}
+@media screen and (min-width: 992px) {
+    #lugar {
+
+        height: 100vh;
+
+
+    }
+
+}
