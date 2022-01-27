@@ -2,13 +2,14 @@
 .nosotros{
 position: relative;
 
-.nosotros__text {
-    margin-bottom: 3rem;
-    
-}
+
 
 .fa-chevron-down{
-    @include position-i;
+    @include position-i-down;
+    
+}
+.fa-chevron-up{
+    @include position-i-up;
     
 }
 
@@ -24,8 +25,7 @@ position: relative;
     .accordion {
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        cursor: pointer;
+        background-size: cover;       
         height: 100vh;
         flex: auto;
         width: 20%;
@@ -60,5 +60,22 @@ position: relative;
     }
 
 }
+@media screen and (max-width: 768px) {
+
+    .nosotros__text {      
+        position: absolute;
+        // top: 50%;
+        bottom: 10%;
+        color: #fff;
+        z-index: 10;
+        padding-bottom: 1rem ;
+        background-image: linear-gradient(to right, #c1c161 0%, #c1c161 100%);        
+        
+    
+    }
+    
+   
+}
+
 
 /*End Nosotros*/

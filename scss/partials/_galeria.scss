@@ -3,7 +3,11 @@
     position: relative;
 
     .fa-chevron-down{
-        @include position-i;
+        @include position-i-down;
+        
+    }
+    .fa-chevron-up{
+        @include position-i-up;
         
     }
  img {

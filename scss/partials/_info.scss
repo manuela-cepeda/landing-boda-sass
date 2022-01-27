@@ -1,48 +1,58 @@
 /*Boda*/
-.boda{
+.boda {
     position: relative;
+    min-height: 100vh;
 
-    .fa-chevron-down{
-        @include position-i;
-        
-    }
-    
+    .fa-chevron-down {
+        @include position-i-down;
 
-
-.boda__info {
-
-    .boda__p {
-        text-align: center;
     }
 
+    .fa-chevron-up {
+        @include position-i-up;
+
+    }
+
+
+    .boda__info {
+        min-height: 65vh;
+
+        .boda__p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+    }
+
+    .boda__mapa {
+        position: relative;
+        background-color: map-get($colors, gold-color);
+        min-height: 35vh;
+   
+
+
+        iframe {
+
+            position: absolute;
+            bottom: 2rem;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 90%;
+            height: 14rem;
+
+            -webkit-box-shadow: -1px 10px 18px -10px map-get($colors, dark-color);
+            box-shadow: -1px 10px 18px -10px map-get($colors, dark-color);
+        }
+
+
+    }
+
 }
-.boda__mapa {
-    position: relative;
-background-color: map-get($colors, dark-color);
-height: 15rem;
-margin-top: 4rem;
-/* padding-bottom: 1rem; */
-iframe{
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
-    left: 0;
-   margin: auto;
-    width: 90%;
-    height: 15rem;
-  
-    -webkit-box-shadow: 4px 4px 0px 2px map-get($colors, gold-color);
-        box-shadow: 4px 4px 0px 2px map-get($colors, gold-color);
-}
 
 
-}
+@media screen and (min-width: 400px) and  (min-device-width : 768px) {
 
-}
-
-
-@media screen and (min-width: 768px) {
-    
     .boda__gridcontainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -53,25 +63,32 @@ iframe{
 
 @media screen and (min-width: 992px) {
 
-    .boda{
-    .boda__info {
-        height: 55vh;
-    } 
-
-    .boda__mapa {
-       
-        height: 45vh;
-        margin-top: 0;
-        iframe {
-            bottom:  3rem;
-            width: 70%;
-            height:14rem; 
-           
-            
+    .boda {
+        .boda__info {
+            height: 65vh;
         }
-    }  
+
+        .boda__mapa {
+
+            height: 35vh;
+            margin-top: 0;
+
+            iframe {
+                bottom: 3rem;
+                width: 70%;
+                height: 15rem;
+
+
+            }
+        }
+    }
 }
+
+@media (min-width: 568px) and (orientation: landscape) {
+    iframe {
+        height: 50vh;
+    }
 }
-    
+
 
 /*End Boda*/

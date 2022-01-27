@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- HEAD -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title>Invitación Digital Boda</title>
     <meta name="description"
         content="Invitaciones de boda o casamiento creativas y personalizables, una nueva forma de enviar la información del evento, itinerario, fotos y más." />
     <meta name="keywords" content="casamiento, boda, invitación, evento, novios " />
-
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,80 +22,100 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- FIN HEAD -->
+
+<!-- BODY -->
 
 <body>
-
-
-    <header class="header">
-
-
-        <div class="header__marca">
-            <a href="/">
-                <img class="header__logo" src="img/lyp2.png" alt="Logo">
-            </a>
-        </div>
-        <div class="header__menuhamb">
-            <input type="checkbox" id="btn__menuhamb">
-
-            <label for=btn__menuhamb class="header__menuhamb-lineas">
-                <span class="header__menuhamb-linea"></span>
-                <span class="header__menuhamb-linea"></span>
-                <span class="header__menuhamb-linea"></span>
-            </label>
-
-            <nav class="menuhamb__nav">
-                <ul class="menuhamb__nav-hide">
-                    <li><a href="#nosotros">Nuestra historia</a></li>
-                    <li> <a href="#boda">La Boda</a></li>
-                    <li><a href="#lugar">El Lugar</a></li>
-                    <li><a href="#confirmacion">Confirmación</a></li>
-                </ul>
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <!-- Logo -->
+            <div class="header__marca">
+                <a href="/">
+                    <img class="header__logo" src="img/lyp2.png" alt="Logo">
+                </a>
+            </div>
+            <!-- Fin Logo -->
+            <!-- Menu Hamburguesa -->
+            <div class="header__menuhamb">
+                <!-- Lineas Menu Hamburguesa -->
+                <input type="checkbox" id="btn__menuhamb">
+                <label for=btn__menuhamb class="header__menuhamb-lineas">
+                    <span class="header__menuhamb-linea"></span>
+                    <span class="header__menuhamb-linea"></span>
+                    <span class="header__menuhamb-linea"></span>
+                </label>
+                <!-- Fin Lineas Menu Hamburguesa -->
+                <!--Menu hamburguesa navbar oculto  -->
+                <nav class="menuhamb__nav">
+                    <ul class="menuhamb__nav-hide">
+                        <li><a href="#nosotros">Nuestra historia</a></li>
+                        <li> <a href="#boda">La Boda</a></li>
+                        <li><a href="#lugar">El Lugar</a></li>
+                        <li><a href="#confirmacion">Confirmación</a></li>
+                    </ul>
+                </nav>
+                <!-- Fin Menu hamburguesa navbar oculto  -->
+                <!-- Fin Menu hamburguesa  -->
+            </div>
+            <!-- navbar pantallas grandes-->
+            <nav class="header__nav">
+                <a class="nav__a" href="#nosotros">Nuestra historia</a>
+                <a class="nav__a" href="#boda">La Boda</a>
+                <a class="nav__a" href="#lugar">El Lugar</a>
+                <a class="nav__a" href="#confirmacion">Confirmación</a>
             </nav>
         </div>
-
-        <nav class="header__nav">
-
-            <a class="nav__a" href="#nosotros">Nuestra historia</a>
-            <a class="nav__a" href="#boda">La Boda</a>
-            <a class="nav__a" href="#lugar">El Lugar</a>
-            <a class="nav__a" href="#confirmacion">Confirmación</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-
+        <!-- Fin navbar pantallas grandes -->
+        <!-- Hero  -->
+        <div id="hero" class="hero">
+            <div class="header__fondo"></div>
             <div class="hero__title">
                 <h2>¡Nos Casamos!</h2>
                 <h1> Lean y Pau </h1>
                 <h4> 26 de febrero de 2022 </h4>
-                <a href="#nosotros"><i class="fas fa-chevron-down white"></i></a>
+                <a href="#nosotros"><i class="fas fa-chevron-down white "></i></a>
             </div>
-
-        </section>
+        </div>
+        <!-- Fin Hero  -->
+    </header>
+    <!-- FIN HEADER -->
+    <!--  MAIN - SECCIONES -->
+    <main>
+        <!-- SECCION NOSOTROS  -->
         <section class="nosotros background-gradient" id="nosotros">
-
-            <div class="nosotros__text">
-                <h2>Nuestra historia</h2>
-
-                <p>El destino nos pone al lado de otra persona, pero depende de los dos caminar juntos... </p>
-                <!-- <p>Una propuesta, un Sí y una decisión que tomamos juntos </p> -->
-                <a href="#boda"><i class="fas fa-chevron-down white"></i></a>
-            </div>
-
-
+            <!-- Fin Nosotros imagenes -->
             <div class="nosotros__acordion">
                 <div class="accordion" style="background-image: url(img/nuestra_historia.webp)"></div>
                 <div class="accordion" style="background-image: url(img/fondo_hero.webp)"></div>
                 <div class="accordion" style="background-image: url(img/nuestra_historia2.webp)"></div>
-
             </div>
+            <!-- Fin Nosotros imagenes -->
+            <!-- Nosotros texto -->
+            <div class="nosotros__text">
+                <h2>Nuestra historia</h2>
+                <p>El destino nos pone al lado de otra persona, pero depende de los dos caminar juntos... </p>
+            </div>
+            <!-- Fin Nosotros texto -->
 
+            <!-- Selector Diapositiva  -->
 
-
+            <div class="diapositiva">
+                <a class="diapositiva__linea dark" href="#hero"></a>
+                <a class="diapositiva__linea-select dark" href="#nosotros"></a>
+                <a class="diapositiva__linea dark" href="#boda"></a>
+                <a class="diapositiva__linea dark" href="#lugar"></a>
+                <a class="diapositiva__linea dark" href="#confirmacion"></a>
+            </div>
+            <!-- Fin Selector Diapositiva  -->
 
         </section>
+        <!-- FIN SECCION NOSOTROS  -->
 
+        <!-- SECCION BODA -->
         <section class="boda" id="boda">
+            <!-- Boda Texto -->
             <div class="boda__info">
                 <h2>La Boda</h2>
 
@@ -124,53 +137,80 @@
                         <p class="boda__p">Villa Margherita</p>
                     </div>
 
-                </div>
 
+                </div>
+                <!-- Fin Boda Texto -->
+                <!-- Iframe Mapa -->
             </div>
             <div class="boda__mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.934379583334!2d-60.68900448714906!3d-32.89860199974899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539d2601e269%3A0xb4029922c7a2e26d!2sVilla%20Margherita!5e0!3m2!1ses!2ses!4v1636996615749!5m2!1ses!2ses"
                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <a href="#lugar"><i class="fas fa-chevron-down white"></i></a>
             </div>
+            <!-- Fin Iframe Mapa -->
+            <!-- Selector Diapositiva  -->
+            <div class="diapositiva">
+                <a class="diapositiva__linea dark" href="#hero"></a>
+                <a class="diapositiva__linea dark" href="#nosotros"></a>
+                <a class="diapositiva__linea-select dark" href="#boda"></a>
+                <a class="diapositiva__linea dark" href="#lugar"></a>
+                <a class="diapositiva__linea dark" href="#confirmacion"></a>
+            </div>
+            <!-- Fin Selector Diapositiva  -->
 
         </section>
+        <!-- FIN SECCION INFO BODA -->
 
+        <!--  SECCION lUGAR -->
         <section id="lugar">
             <h2>El Lugar</h2>
+            <!--  Grid Galeria -->
             <div class="container">
                 <div class="row ">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-sm-6">
                         <img src="img/salon_fiesta.webp" alt="salon_fiesta1">
-                    </div>                  
-                    <div class="col-lg-4 col-md-6">
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
                         <img src="img/salon_fiesta2.webp" alt="salon_fiesta2">
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-sm-6">
                         <img src="img/salon_fiesta3.webp" alt="salon_fiesta4">
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-sm-6">
                         <img src="img/salon_fiesta4.webp" alt="salon_fiesta4">
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-sm-6">
                         <img src="img/salon_fiesta5.webp" alt="salon_fiesta5">
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-sm-6">
                         <img src="img/salon_fiesta6.webp" alt="salon_fiesta6">
                     </div>
                 </div>
             </div>
-            <a href="#confirmacion"><i class="fas fa-chevron-down"></i></a>
+            <!-- Fin Grid Galeria -->
+            <!--  Selector Diapositiva  -->
+            <div class="diapositiva">
+                <a class="diapositiva__linea dark" href="#hero"></a>
+                <a class="diapositiva__linea dark" href="#nosotros"></a>
+                <a class="diapositiva__linea dark" href="#boda"></a>
+                <a class="diapositiva__linea-select dark" href="#lugar"></a>
+                <a class="diapositiva__linea dark" href="#confirmacion"></a>
+            </div>
+            <!-- Fin Selector Diapositiva  -->
         </section>
+        <!-- FIN SECCION LUGAR -->
 
+        <!-- SECCION CONFIRMACION FORMULARIO  -->
         <section id="confirmacion" class="confirmacion background-gradient ">
-
+            <!-- Confirmacion Texto -->
             <div class="confirmacion__text ">
                 <h2>¡Espero que vengas!</h2>
-                <p>Es muy importante para nosotros verte ese día y nos encataría que nos confirmaras tu asistencia.</p>
-                <a href="#footer"><i class="fas fa-chevron-down"></i></a>
-            </div>
+                <p>Es muy importante para nosotros verte ese día y nos encataría que nos confirmaras tu asistencia.
+                </p>
 
+            </div>
+            <!-- Fin Confirmacion Texto -->
+            <!-- Formulario de Confirmacion  -->
             <form class="confirmacion__form" action="">
                 <fieldset>
                     <legend>Confirmación de asistencia </legend>
@@ -191,31 +231,48 @@
                     </select>
                     <br>
                     <textarea cols="30" rows="10"> Aclaraciones</textarea>
-
-
-
-
                 </fieldset>
                 <input class="btn" type="submit" value="Enviar">
             </form>
+            <!-- Fin Formulario de Confirmacion  -->
+
+              <!--  Selector Diapositiva  -->
+            <div class="diapositiva">
+                <a class="diapositiva__linea dark" href="#hero"></a>
+                <a class="diapositiva__linea dark" href="#nosotros"></a>
+                <a class="diapositiva__linea dark" href="#boda"></a>
+                <a class="diapositiva__linea dark" href="#lugar"></a>
+                <a class="diapositiva__linea-select dark" href="#confirmacion"></a>
+            </div>
+              <!-- Fin  Selector Diapositiva  -->
 
         </section>
-
-
+        <!-- FIN SECCION CONFIRMACION -->
 
     </main>
-
+    <!-- FIN MAIN CONTENIDO -->
+    <!-- INICIO FOOTER -->
     <footer id="footer" class="footer">
-        <p>Fotografias de <a class="footer__a" href="https://www.facebook.com/lascuatromiradas" target="_blank">Cuatro
-                Miradas</a></p>
-        <p>Hecho por <a class="footer__a" href="https://github.com/manuela-cepeda" target="_blank">MLC 2021</a></p>
-        <a href="#"><i class="fas fa-chevron-up"></i></a>
+        <!-- Links Footer -->
+        <div class="footer__info">
+            <p>Fotografias de <a class="footer__a" href="https://www.facebook.com/lascuatromiradas"
+                    target="_blank">Cuatro
+                    Miradas</a></p>
+            <p>Hecho por <a class="footer__a" href="https://github.com/manuela-cepeda" target="_blank">MLC 2021</a></p>
+            <nav class="footer__nav">
+                <a class="" href="#">Inicio -</a>
+                <a class="" href="#nosotros"> Nuestra historia -</a>
+                <a class="" href="#boda">La Boda -</a>
+                <a class="" href="#lugar"> El Lugar -</a>
+                <a class="" href="#confirmacion"> Confirmación</a>
+            </nav>
+        </div>
+        <!-- Fin Links Footer  -->
+        <!-- Flecha hacia Hero -->
+        <a href="#hero"><i class="fas fa-chevron-up white "></i></a>
+        <!-- Fin flecha hacia Hero -->
     </footer>
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script> -->
+    <!-- FIN FOOTER -->
 </body>
 
 </html>

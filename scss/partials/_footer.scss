@@ -2,15 +2,36 @@
 
 
 .footer {
-    padding: 1rem;
+    padding: 0.5rem ;
     background-color: map-get($colors, dark-color );
     color: #fff;
-    text-align: center;
+    text-align: center;   
+    position: relative;
+    
+    p,a{
+        font-size: 14px;
+    }
+    .fa-chevron-down{
+        @include position-i-down;
+        
+    }
+
 
     .footer__a {
         color: map-get($colors, gold-color );
     }
 }
 
+@media screen and (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2rem;
+    }
 
+    .footer__info{
+        text-align: left;
+    }
+}
 /* End Footer */

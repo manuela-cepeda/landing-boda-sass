@@ -1,8 +1,6 @@
 /*Hero*/
 .hero {
-    margin-top: -6rem;
-
-
+    margin-top: -6rem;  
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../img/fondo_hero.webp);
     background-position: top;
@@ -14,18 +12,27 @@
     color: #fff;
     
     .hero__title {
-        margin-top: 10rem;
+    
         text-align: center;
-        font-weight: bold;       
-       
+        font-weight: bold;     
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
        
 
         h1, h4{
             letter-spacing: 0.5rem;        
             text-transform: uppercase;
         }
+
+       
     
     }
+
+    
+   
 }
 
 
@@ -33,16 +40,16 @@
 
   
 
-    .hero .hero__title {
-        margin-top: 0;
+    .hero i.fa-chevron-down {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-
-
+        bottom: -70%;
+        right: 50%;
+        font-size: 30px;
+       
+        
     }
+
+   
 }
 
 /*End Hero*/
